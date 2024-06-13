@@ -11,3 +11,11 @@
     border-radius: 10%;
     
   }
+  .container{
+display: flex;
+flex-direction: row;
+border: solid;
+border-color: black;
+justify-content: space-between;
+
+  }
