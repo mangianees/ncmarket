@@ -1,13 +1,41 @@
 import { Link } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
 
-function Home() {
-    return(
+function Home({items}) {
+
+  function handleElectronics(){
+    const electronicItems = items.filter((item)=>{
+      if(item.category_name=== 'Electronics'){
+        return item
+      }
+    })
+    console.log('Electronics', electronicItems)
+  }
+
+  function handleRelic(){
+    const relicItems = items.filter((item)=>{
+      if(item.category_name=== 'Relics'){
+        return item
+      }
+    })
+    console.log('Relic', relicItems)
+  }
+
+  function handleHousehold(){
+    const householdItems = items.filter((item)=>{
+      if(item.category_name=== 'Household'){
+        return item
+      }
+    })
+    console.log('Household', householdItems)
+  }
+
+  
+  return(
         <>
     
     <Nav
+      className="justify-content-center"
       activeKey="/home"
       onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
     >
@@ -23,19 +51,16 @@ function Home() {
     </Nav>
 
     <div className="Category">
-
-      
-
       <nav>
         <ul>
           <li>
-            <Link>Electronics</Link>
+            <Link onClick={handleElectronics}>Electronics</Link>
           </li>
           <li>
-            <Link>Relic</Link>
+            <Link onClick={handleRelic}>Relic</Link>
           </li>
           <li>
-            <Link>Household</Link>
+            <Link onClick={handleHousehold}>Household</Link>
           </li>
         </ul>
       </nav>

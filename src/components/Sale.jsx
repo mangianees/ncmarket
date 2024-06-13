@@ -1,10 +1,14 @@
-function Sale() {
+import ItemCard from "./ItemCard";
+
+function Sale({items}) {
+    // console.log(items, "from sale")
     return(
-        <>
-        <h1>This is Sales</h1>
-        </>
+        <ul>
+            {items.map((item)=>{
+                return( <ItemCard item = {item} key={item.item_id} />)
+            })}
+        </ul>
     )
-    
 }
 
 export default Sale;

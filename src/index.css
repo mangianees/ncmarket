@@ -6,3 +6,8 @@
     border: solid;
     color: black;
   }
+
+  .buttons{
+    border-radius: 10%;
+    
+  }
