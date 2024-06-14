@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
 import { getItems } from './utilities/api';
 import CategorySideBar from './components/CatergorySideBar';
+import PostItem from './components/PostItem';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <>
       <Navbar />
       <CategorySideBar items={items}/>
+      <PostItem />
       <Sale items = {items} />
       {/* <ItemCard /> */}
     </>

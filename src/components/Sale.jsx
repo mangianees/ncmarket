@@ -6,15 +6,21 @@ import Col from 'react-bootstrap/Col';
 function Sale({items}) {
 
     return(
-
-        <ul>   
-            <li>
-            {items.map((item)=>{
-                return( <ItemCard item = {item} key={item.item_id} />)
-            })}
-            </li>
-        </ul>
         
+          
+            <div className="container">
+            
+              
+            {items.map((item)=>{
+                return( 
+                    <div className="item">
+                <ItemCard item = {item} key={item.item_id} />
+                </div>)
+            })}
+            
+            
+        </div>
+    
 
 
 

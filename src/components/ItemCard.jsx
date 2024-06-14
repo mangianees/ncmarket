@@ -1,40 +1,51 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+// import Button from 'react-bootstrap/Button';
+// import Card from 'react-bootstrap/Card';
 
 function ItemCard({item}) {
+
+  // console.log();
     
     return(
       <>
-            <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={item.img_url} />
-              <Card.Body>
+            {/* <div className="container">
+              <div className="item"> */}
 
-                <Card.Title>{item.item_name}</Card.Title>
+                  <div> <img className="image" src={item.img_url} alt="Missing Image" />
+                  </div>
+                  
+                  <div className="Body">
 
-                <Card.Text>
-                {item.description}
-                </Card.Text>
+                    <div className="Title">{item.item_name}</div>
 
-                <Card.Text>
-                <b>£{item.price}</b>
-                </Card.Text>
+                    <div className="Text">
+                    {item.description}
+                    </div>
 
-                <Card.Text>
-                {item.category_name}
-                </Card.Text>
+                    <div className="Text">
+                    <b>£{item.price}</b>
+                    </div>
 
-                <Card.Text>
-                {item.description}
-                </Card.Text>
-                <div>
-                <Button className='buttons'>Add to Basket</Button>
-                </div>
-                <br />
-                <div>
-                <Button className='buttons'>Buy Now</Button>  
-                </div>
-              </Card.Body>
-            </Card>
+                    <div className="Text">
+                    {item.category_name}
+                    </div>
+
+                    <div className="Text">
+                    {item.description}
+                    </div>
+
+                    <div>
+                    <button className='buttons'>Add to Basket</button>
+                    </div>
+
+                    <br />
+                    
+                    <div>
+                    <button className='buttons'>Buy Now</button>
+                    </div>
+
+                  </div>
+              {/* </div>
+            </div> */}
 
            
 
