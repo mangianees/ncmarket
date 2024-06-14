@@ -7,25 +7,14 @@ function Sale({items}) {
 
     return(
         
-          
             <div className="container">
-            
-              
             {items.map((item)=>{
                 return( 
                     <div className="item">
                 <ItemCard item = {item} key={item.item_id} />
                 </div>)
             })}
-            
-            
-        </div>
-    
-
-
-
-        
-    
+        </div> 
     )
 }
 

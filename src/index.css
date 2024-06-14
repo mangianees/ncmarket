@@ -34,7 +34,7 @@ border: solid;
   .postItem{
 border: solid;
 border-color: #000000;
-width: 300px;
-height: 250px;
+width: 250px;
+height: fit-content;
 
   }

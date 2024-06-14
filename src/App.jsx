@@ -26,7 +26,6 @@ function App() {
       <CategorySideBar items={items}/>
       <PostItem />
       <Sale items = {items} />
-      {/* <ItemCard /> */}
     </>
   </BrowserRouter>
   )

@@ -11,21 +11,21 @@ function handlePostItem(params) {
     return(
         <>
         
-<nav class="navbar navbar-dark bg-dark nav-fill w-100" >
+<nav className="navbar navbar-dark bg-dark nav-fill w-100" >
   
 className="justify-content-center"
       activeKey="/home"
       onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
       <Nav.Item>
-      <Link class="navbar-brand" to="/">Home</Link>
+      <Link className="navbar-brand" to="/">Home</Link>
       </Nav.Item>
       <Nav.Item>
-      <Link class="navbar-brand" to="/sale">Sale</Link>
-      <Link class="navbar-brand" to="/postItem" onClick={handlePostItem}>Create Listing</Link>
+      <Link className="navbar-brand" to="/sale">Sale</Link>
+      <Link className="navbar-brand" to="/postItem" onClick={handlePostItem}>Create Listing</Link>
 
       </Nav.Item>
       <Nav.Item>
-      <Link class="navbar-brand" to="/purchase">Purchase</Link>
+      <Link className="navbar-brand" to="/purchase">Purchase</Link>
       </Nav.Item>
 
 </nav>
